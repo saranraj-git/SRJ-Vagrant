@@ -1,21 +1,20 @@
-### SRJ-Vagrant
-Box Uploaded to 
-https://app.vagrantup.com/saranrajv/boxes/ubuntu-desktop/versions/1
+# My Vagrant Account and my boxes:
+https://app.vagrantup.com/saranrajv
 
-# To use the Ubuntu Virtual box with Desktop Installed 
+## To use the Ubuntu Virtual box with Desktop Installed 
 
 vagrant init saranrajv/ubuntu-desktop 
 
 vagrant up
 
-# To use the Centos Virtual box with GNOME desktop installed
+## To use the Centos Virtual box with GNOME desktop installed
 
 vagrant init saranrajv/centos7 
 
 vagrant up
 
 
-# To use postgres virtualbox in centos 7
+## To use postgres virtualbox in centos 7
 
 vagrant init saranrajv/pgcentos7 
 
