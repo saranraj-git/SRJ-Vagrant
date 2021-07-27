@@ -1,0 +1,18 @@
+
+vagrant init saranrajv/pgcentos7
+
+# To install dbt
+
+sudo yum install redhat-rpm-config gcc libffi-devel python3 python3-devel openssl-devel git python3 gcc make -y
+cd / && git clone https://github.com/dbt-labs/dbt.git
+cd dbt
+python3 -m venv /dbt
+source /dbt/bin/activate
+pip install --upgrade pip
+pip install --upgrade setuptools
+pip install -r requirements.txt
+echo 'export PATH="$PATH:/dbt/bin"' >> ~/.bashrc
+source ~/.bashrc
+# cat ~/.bashrc | grep dbt (to validate the entry)
+
+dbt --version
