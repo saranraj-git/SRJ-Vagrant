@@ -37,3 +37,9 @@ curl https://raw.githubusercontent.com/svenugopal333/SRJ-Vagrant/main/DBT-Postgr
 
 vagrant up
 
+
+### To use mysql virtualbox in centos 7 with port forwarding (3306) to local machine (3306)
+
+curl https://raw.githubusercontent.com/svenugopal333/SRJ-Vagrant/main/Mysql-centos7/mysql-Vagrantfile > Vagrantfile
+
+vagrant up
