@@ -15,12 +15,22 @@ sudo mysql_secure_installation
 
 sudo systemctl restart mysqld
 
-# root
-# Itiseasy1!
 
-# To create a user who have access to this mysql server from remote machine
+"""
+mysql -u root -p
+
+root
+Itiseasy1!
 
 CREATE USER 'mysqladmin'@'localhost' IDENTIFIED BY 'Itiseasy1!';
 CREATE USER 'mysqladmin'@'%' IDENTIFIED BY 'Itiseasy1!';
 GRANT ALL PRIVILEGES ON *.* TO 'mysqladmin'@'localhost';
+GRANT ALL PRIVILEGES ON *.* TO 'mysqladmin'@'%';
 FLUSH PRIVILEGES;
+
+Installed mysql8.0 in centos 7
+
+mysql username : mysqladmin
+mysql password :  Itiseasy1!
+
+"""
