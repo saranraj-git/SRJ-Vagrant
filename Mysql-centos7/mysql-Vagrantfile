@@ -8,4 +8,5 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "saranrajv/mysql8centos7"
   config.vm.network "forwarded_port", guest: 3306, host: 3306, host_ip: "127.0.0.1"
+  config.vm.synced_folder ".", "/vagrant", type: "virtualbox"
 end
